@@ -2,7 +2,8 @@ name: Expo CI CD
 
 on:
   push :
-    branches : main
+    branches : 
+    - main
 
 jobs:
   Build-for-android:
@@ -27,5 +28,4 @@ jobs:
       - name: Build Android APK Bundle
         run: expo build:android
   
-
   
